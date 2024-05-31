@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="screens.CreateTweetScreen">
+
+    <EditText
+        android:id="@+id/tweet_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Enter your Tweet"
+        android:maxLength="280" />
+
+    <ImageView
+        android:id="@+id/picked_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/tweet_text"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <Button
+        android:background="@drawable/button"
+        android:id="@+id/pick_image_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/picked_image"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_marginLeft="30dp"
+        android:text="Pick Image" />
+
+    <Button
+        android:background="@drawable/button"
+        android:id="@+id/tweet_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pick_image_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/white"
+        android:text="Tweet" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

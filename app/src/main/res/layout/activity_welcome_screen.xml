@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="See what’s happening in the world right now"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:background="@drawable/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Log In"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_create_account"
+        android:background="@drawable/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:text="Create account"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

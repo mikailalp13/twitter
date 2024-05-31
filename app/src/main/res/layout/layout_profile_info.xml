@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_profile_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:padding="16dp">
+
+    <!-- Profile image -->
+    <ImageView
+        android:id="@+id/image_profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true" />
+
+
+    <Button
+        android:id="@+id/button_follow"
+        android:background="@drawable/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Follow"
+        android:textColor="@android:color/white"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:textSize="18sp"
+        android:layout_marginStart="16dp"
+        android:layout_below="@id/image_profile" />
+
+    <TextView
+        android:id="@+id/text_bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bio"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/text_name" />
+
+    <TextView
+        android:id="@+id/text_followers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Followers: 0 | Following: 0"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/text_bio" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_followers"
+        android:layout_marginTop="16dp"
+        app:tabTextColor="@android:color/white"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabIndicatorColor="@android:color/white" />
+
+</RelativeLayout>
+
